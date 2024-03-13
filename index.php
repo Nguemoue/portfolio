@@ -439,10 +439,10 @@
             <div class="col-lg-4 col-md-6 portfolio-item filter-project">
                 <center><h4>Simmagro</h4></center>
                 <div class="portfolio-wrap">
-                    <img src="https://simmagro.com/" class="img-fluid" alt="">
+                    <img src="assets/img/project/simmagro.png" class="img-fluid" alt="">
                     <div class="portfolio-info">
                         <div class="portfolio-links">
-                            <a href="projects/vdg.php" data-gall="portfolioDetailsGallery" data-vbtype="iframe"
+                            <a href="https://simmagro.com" data-gall="portfolioDetailsGallery" data-vbtype="iframe"
                                class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
                         </div>
                     </div>
