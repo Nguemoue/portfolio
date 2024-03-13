@@ -1,0 +1,20 @@
+{
+    "name": "nguemoue/portfolio",
+    "description": "Project sur mon portfolio personnel",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        },
+        "files": ["helpers/helpers.php"]
+    },
+    "authors": [
+        {
+            "name": "Nguemoue",
+            "email": "lucchuala@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/var-dumper": "^6.4"
+    }
+}
