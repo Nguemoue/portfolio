@@ -1,11 +1,3 @@
-<?php
-
-use App\Database\Database;
-
-require_once realpath(__DIR__ . '/vendor/autoload.php');
-$db = Database::getInstance();
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 
