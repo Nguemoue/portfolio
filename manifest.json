@@ -1,0 +1,39 @@
+{
+    "name": "Portfolio Luc Nguemoue - Développeur Web",
+    "short_name": "Luc Nguemoue",
+    "description": "Portfolio professionnel de Luc Nguemoue, développeur web full stack spécialisé en Laravel et JavaScript",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#010e1b",
+    "theme_color": "#12d640",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/favicon.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/favicon.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "categories": [
+        "portfolio",
+        "business",
+        "productivity"
+    ],
+    "lang": "fr",
+    "scope": "/",
+    "screenshots": [
+        {
+            "src": "/website_images/HomePage.gif",
+            "sizes": "900x600",
+            "type": "image/gif",
+            "form_factor": "wide"
+        }
+    ]
+}

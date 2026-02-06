@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+
+# Fichiers et dossiers à exclure
+Disallow: /vendor/
+Disallow: /app/
+Disallow: /config/
+Disallow: /src/
+Disallow: /helpers/
+Disallow: /composer.json
+Disallow: /composer.lock
+Disallow: /.git/
+Disallow: /website_images/
+
+# Autoriser les ressources importantes pour le SEO
+Allow: /assets/
+Allow: /favicon.png
+Allow: /sitemap.xml
+
+# Sitemap
+Sitemap: https://luc-dev.site/sitemap.xml
+
+# Crawl-delay pour éviter la surcharge
+Crawl-delay: 1

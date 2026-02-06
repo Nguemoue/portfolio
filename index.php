@@ -1,29 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-5BB8W2X');</script>
-    <!-- End Google Tag Manager -->
-    <link rel="icon" type="image/png" href="/favicon.png"/>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
 
-    <title>Nguemoue Portfolio</title>
-    <meta content="" name="descriptison">
-    <meta content="" name="keywords">
+        // Event tracking pour le SEO
+        gtag('event', 'page_view', {
+            page_title: 'Portfolio Luc Nguemoue',
+            page_location: window.location.href
+        });
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Luc Nguemoue">
+    <meta name="language" content="fr">
+    <link rel="canonical" href="https://luc-dev.site/">
+
+    <!-- SEO Meta Tags -->
+    <title>Luc Nguemoue - Développeur Web Full Stack | Portfolio & CV</title>
+    <meta name="description" content="Développeur web passionné spécialisé en Laravel, JavaScript et Intelligence Artificielle. Découvrez mes projets, compétences et expériences. Contact: +237 699 568 073">
+    <meta name="keywords" content="développeur web, Laravel, JavaScript, PHP, Intelligence Artificielle, portfolio, CV, Cameroun, Yaoundé, développeur full stack, programmeur">
+
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Luc Nguemoue - Développeur Web Full Stack | Portfolio">
+    <meta property="og:description" content="Développeur web passionné spécialisé en Laravel, JavaScript et IA. Découvrez mes projets et compétences.">
+    <meta property="og:url" content="https://luc-dev.site/">
+    <meta property="og:image" content="https://luc-dev.site/assets/img/profile.jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Luc Nguemoue Portfolio">
+    <meta property="og:locale" content="fr_FR">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Luc Nguemoue - Développeur Web Full Stack">
+    <meta name="twitter:description" content="Développeur web passionné spécialisé en Laravel, JavaScript et IA.">
+    <meta name="twitter:image" content="https://luc-dev.site/assets/img/profile.jpeg">
+    <meta name="twitter:site" content="@nguemoue">
+    <meta name="twitter:creator" content="@nguemoue">
+
+    <!-- LinkedIn Meta Tags -->
+    <meta property="article:author" content="https://www.linkedin.com/in/nguemoue">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon.png">
+
+    <!-- Progressive Web App -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#12d640">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Luc Nguemoue Portfolio">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": ["Person", "WebPage"],
+        "name": "Luc Nguemoue",
+        "jobTitle": "Développeur Web Full Stack",
+        "description": "Développeur web passionné spécialisé en Laravel, JavaScript et Intelligence Artificielle",
+        "url": "https://luc-dev.site/",
+        "image": "https://luc-dev.site/assets/img/profile.jpeg",
+        "telephone": "+237699568073",
+        "email": "lucchuala@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Yaoundé",
+            "addressRegion": "Centre",
+            "addressCountry": "CM"
+        },
+        "sameAs": [
+            "https://www.linkedin.com/in/nguemoue",
+            "https://www.github.com/Nguemoue"
+        ],
+        "knowsAbout": [
+            "Développement Web",
+            "Laravel",
+            "JavaScript",
+            "PHP",
+            "Intelligence Artificielle",
+            "Architecture Logicielle",
+            "Tests",
+            "Ingénierie Logicielle"
+        ],
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Freelance"
+        },
+        "hasOccupation": {
+            "@type": "Occupation",
+            "name": "Développeur Web",
+            "occupationLocation": {
+                "@type": "City",
+                "name": "Yaoundé"
+            },
+            "skills": "Laravel, JavaScript, PHP, HTML, CSS, MySQL, PostgreSQL"
+        },
+        "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "Institut Africain d'Informatique"
+        }
+    }
+    </script>
+
+    <!-- Website Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Portfolio Luc Nguemoue",
+        "url": "https://luc-dev.site/",
+        "description": "Portfolio professionnel de Luc Nguemoue, développeur web full stack",
+        "author": {
+            "@type": "Person",
+            "name": "Luc Nguemoue"
+        },
+        "inLanguage": "fr-FR",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://luc-dev.site/?s={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
@@ -39,29 +150,6 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
-
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169007209-3"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
-        gtag('js', new Date());
-
-        gtag('config', 'UA-169007209-3');
-    </script>
-
-
-    <!-- =======================================================
-    * Template Name: Personal - v2.1.0
-    * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-    * Author: BootstrapMade.com
-    * License: https://bootstrapmade.com/license/
-    ======================================================== -->
 </head>
 
 <body>
@@ -77,47 +165,47 @@
 
     <div class="container">
 
-        <h3><a href="index.html">Nguemoue</a> &nbsp;&nbsp;</h3>
+        <h1><a href="index.php">Luc Nguemoue</a> &nbsp;&nbsp;</h1>
         <h2 style="color:#fff">Je suis <span class="typing" style="color:#12D640"></span></h2>
-        <nav class="nav-menu d-none d-lg-block">
+        <nav class="nav-menu d-none d-lg-block" role="navigation" aria-label="Menu principal">
             <ul>
-                <li class="active"><a href="#header"> <span>Acceuil</span></a></li>
-                <li><a href="#about"><span style="  white-space: nowrap;            ">à propos</span></a></li>
-                <li><a href="#education"> <span>Parcours</span></a></li>
-                <li><a href="#experience"> <span>Experiences</span></a></li>
+                <li class="active"><a href="#header" title="Retour à l'accueil du portfolio"> <span>Acceuil</span></a></li>
+                <li><a href="#about" title="En savoir plus sur Luc Nguemoue"><span style="  white-space: nowrap;            ">à propos</span></a></li>
+                <li><a href="#education" title="Parcours académique et formations"> <span>Parcours</span></a></li>
+                <li><a href="#experience" title="Expériences professionnelles"> <span>Experiences</span></a></li>
                 <!-- <li><a href="#projects"> <span>Projects</span></a></li> -->
-                <li><a href="#portfolio"> <span>Projets</span></a></li>
-                <li><a href="#skills"> <span>Compétences</span></a></li>
-                <li><a href="#links"> <span>CV+Liens</span></a></li>
-                <li><a href="#contacts"> <span>Contacts</span></a></li>
+                <li><a href="#portfolio" title="Découvrir mes projets et réalisations"> <span>Projets</span></a></li>
+                <li><a href="#skills" title="Compétences techniques et technologies maîtrisées"> <span>Compétences</span></a></li>
+                <li><a href="#links" title="Télécharger mon CV et liens utiles"> <span>CV+Liens</span></a></li>
+                <li><a href="#contacts" title="Me contacter pour un projet"> <span>Contacts</span></a></li>
 
             </ul>
         </nav><!-- .nav-menu -->
 
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/nguemoue" target="_blank" class="linkedin"><i
+        <div class="social-links" role="navigation" aria-label="Liens vers les réseaux sociaux">
+            <a href="https://www.linkedin.com/in/nguemoue" target="_blank" class="linkedin" aria-label="Profil LinkedIn de Luc Nguemoue"><i
                         class="bx bxl-linkedin"></i></a>
-            <a href="https://www.github.com/Nguemoue" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-            <a href="mailto:lucchuala@gmail.com" target="_blank" class="google"><i class="bx bxl-google"></i></a>
+            <a href="https://www.github.com/Nguemoue" target="_blank" class="github" aria-label="Profil GitHub de Luc Nguemoue"><i class="bx bxl-github"></i></a>
+            <a href="mailto:lucchuala@gmail.com" target="_blank" class="google" aria-label="Envoyer un email à Luc Nguemoue"><i class="bx bxl-google"></i></a>
 
         </div>
 
     </div>
 </header><!-- End Header -->
 
-<!-- ======= About Section ======= -->
-<section id="about" class="about">
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
 
-    <!-- ======= About Me ======= -->
-    <div class="about-me container">
+        <!-- ======= About Me ======= -->
+        <article class="about-me container">
 
-        <div class="section-title">
-            <h2>A-Propos</h2>
-        </div>
+            <header class="section-title">
+                <h2>A-Propos</h2>
+            </header>
 
         <div class="row">
             <div class="col-lg-4" data-aos="fade-right">
-                <img src="assets/img/profile.jpeg" class="img-fluid" alt="">
+                <img src="assets/img/profile.jpeg" class="img-fluid" alt="Photo de profil de Luc Nguemoue, développeur web full stack">
             </div>
             <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
                 <p class="line-height-4"><span style="font-size: 2em">D</span>éveloppeur concentré et enthousiaste, avec
@@ -352,28 +440,30 @@
             </div>
         </div>
 
-        <div class="row portfolio-container">
+        <div class="row portfolio-container" itemscope itemtype="https://schema.org/CreativeWork">
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                <center><h4>IsiQuest</h4></center>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app" itemscope itemtype="https://schema.org/WebSite">
+                <center><h4 itemprop="name">IsiQuest</h4></center>
                 <div class="portfolio-wrap">
-                    <img src="assets/img/project/isiquest.png" class="img-fluid" alt="">
+                    <img src="assets/img/project/isiquest.png" class="img-fluid" alt="Capture d'écran du projet IsiQuest - Application web développée par Luc Nguemoue" itemprop="image">
                     <div class="portfolio-info">
-
+                        <meta itemprop="description" content="Application web développée pour Multicreatif">
+                        <meta itemprop="url" content="https://multicreatif.fr">
                         <div class="portfolio-links">
                             <a href="https://multicreatif.fr" data-gall="portfolioDetailsGallery" data-vbtype="iframe"
-                               class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
+                               class="venobox" title="Détails du projet IsiQuest"><i class="bx bx-info-circle"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                <center><h4>Pierre Motor Spare</h4></center>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app" itemscope itemtype="https://schema.org/WebSite">
+                <center><h4 itemprop="name">Pierre Motor Spare</h4></center>
                 <div class="portfolio-wrap">
-                    <img src="assets/img/project/pms.png" class="img-fluid" alt="">
+                    <img src="assets/img/project/pms.png" class="img-fluid" alt="Interface du projet Pierre Motor Spare - Site e-commerce développé en Laravel" itemprop="image">
                     <div class="portfolio-info">
-
+                        <meta itemprop="description" content="Site e-commerce développé en Laravel pour la vente de pièces automobiles">
+                        <meta itemprop="url" content="https://pierremotorspares.com">
                         <div class="portfolio-links">
                             <a href="https://pierremotorspares.com/home" data-gall="portfolioDetailsGallery" data-vbtype="iframe"
                                class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
@@ -385,12 +475,12 @@
             <div class="col-lg-4 col-md-6 portfolio-item filter-project">
                 <center><h4>Ederlang</h4></center>
                 <div class="portfolio-wrap">
-                    <img src="assets/img/project/ederlang.png" class="img-fluid" alt="">
+                    <img src="assets/img/project/ederlang.png" class="img-fluid" alt="Interface du projet Ederlang - Plateforme web développée en Laravel et JavaScript">
                     <div class="portfolio-info">
 
                         <div class="portfolio-links">
                             <a href="https://ederlang.com" data-gall="portfolioDetailsGallery" data-vbtype="iframe"
-                               class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
+                               class="venobox" title="Détails du projet Ederlang"><i class="bx bx-info-circle"></i></a>
                         </div>
                     </div>
                 </div>
@@ -399,12 +489,12 @@
             <div class="col-lg-4 col-md-6 portfolio-item filter-project">
                 <center><h4>Katana world</h4></center>
                 <div class="portfolio-wrap">
-                    <img src="assets/img/project/katana.png" class="img-fluid" alt="">
+                    <img src="assets/img/project/katana.png" class="img-fluid" alt="Dashboard du projet Katana World - Application de gestion développée avec PHP et JavaScript">
                     <div class="portfolio-info">
 
                         <div class="portfolio-links">
                             <a href="https://katanaworld.org/fr" data-gall="portfolioDetailsGallery" data-vbtype="iframe"
-                               class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
+                               class="venobox" title="Détails du projet Katana World"><i class="bx bx-info-circle"></i></a>
                         </div>
                     </div>
                 </div>
@@ -439,11 +529,11 @@
             <div class="col-lg-4 col-md-6 portfolio-item filter-project">
                 <center><h4>Simmagro</h4></center>
                 <div class="portfolio-wrap">
-                    <img src="assets/img/project/simmagro.png" class="img-fluid" alt="">
+                    <img src="assets/img/project/simmagro.png" class="img-fluid" alt="Site web Simmagro - Projet de simulation agricole développé par Luc Nguemoue">
                     <div class="portfolio-info">
                         <div class="portfolio-links">
                             <a href="https://simmagro.com" data-gall="portfolioDetailsGallery" data-vbtype="iframe"
-                               class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
+                               class="venobox" title="Détails du projet Simmagro"><i class="bx bx-info-circle"></i></a>
                         </div>
                     </div>
                 </div>
@@ -529,6 +619,13 @@
                 </a>
                 <h4 class="title"><a href="assets/cv_luc.pdf" target="_blank">CV</a></h4>
                 <p class="description" style="color:#fff;">Le lien contient le cv telechargable </p>
+            </div>
+            <div class="col-md-3 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
+                <a href="assets/cvCanada.pdf" target="_blank">
+                    <div class="icon"><i class="icofont-page"></i></div>
+                </a>
+                <h4 class="title"><a href="assets/cvCanada.pdf" target="_blank">CV</a></h4>
+                <p class="description" style="color:#fff;">Mon Cv (Format canadien) </p>
             </div>
             <div class="col-md-3 mt-4 mt-md-0 icon-box" data-aos="fade-up">
                 <a href="https://github.com/rajaprerak/LeetCode_Problems" target="_blank">
