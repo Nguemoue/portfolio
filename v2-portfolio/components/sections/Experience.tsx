@@ -7,19 +7,25 @@ const experiences = [
   {
     id: 1,
     company: 'Kamix',
-    position: 'Développeur Full Stack',
-    period: '2022 - Présent',
-    description: 'Développement d\'applications web avec Laravel et Vue.js. Gestion de projets et collaboration en équipe.',
-    technologies: ['Laravel', 'Vue.js', 'MySQL', 'Docker'],
+    position: 'Développeur Web',
+    period: 'January 2023 - Present',
+    responsibilities: [
+      'Mise en place des technologies et de la documentation du projet.',
+      "Développement d'une solutions de Sondages.",
+      'Tester et corriger les bugs.',
+      'Effectuers des déploiement réguliers sur des serveurs en ligne ...',
+    ],
     current: true,
   },
   {
     id: 2,
-    company: 'Kozao',
-    position: 'Développeur Web',
-    period: '2021 - 2022',
-    description: 'Création de sites web et applications mobiles pour divers clients.',
-    technologies: ['PHP', 'JavaScript', 'WordPress'],
+    company: 'Kozao.',
+    position: 'Stagiaire (Jalios)',
+    period: 'Novembre 2022 - Decembre 2022',
+    responsibilities: [
+      'Initiation au Framework JALIOS.',
+      'Création des Gabarit (Jalios)',
+    ],
     current: false,
   },
 ]
@@ -73,18 +79,11 @@ export default function Experience() {
                     <span>{exp.period}</span>
                   </div>
 
-                  <p className="text-foreground/70 mb-4">{exp.description}</p>
-
-                  <div className="flex flex-wrap gap-2">
-                    {exp.technologies.map((tech) => (
-                      <span
-                        key={tech}
-                        className="text-xs border border-foreground/20 text-foreground px-3 py-1 rounded-sm"
-                      >
-                        {tech}
-                      </span>
+                  <ul className="text-foreground/70 list-disc pl-5 space-y-2">
+                    {exp.responsibilities.map((item) => (
+                      <li key={item}>{item}</li>
                     ))}
-                  </div>
+                  </ul>
                 </div>
               </motion.div>
             ))}

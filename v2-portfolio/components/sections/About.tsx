@@ -1,13 +1,16 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Phone, MapPin, Mail, Code2, Bot, Layers, Cloud } from 'lucide-react'
+import { Phone, MapPin, Mail, Code2, Layers, BarChart3, Binary, Image, CheckCircle2, Wrench } from 'lucide-react'
 
 const interests = [
-  { name: 'Développement Web', icon: Code2 },
-  { name: 'Intelligence Artificielle', icon: Bot },
+  { name: 'Développement logicielle', icon: Code2 },
+  { name: 'Tests', icon: CheckCircle2 },
   { name: 'Architecture Logicielle', icon: Layers },
-  { name: 'Cloud Computing', icon: Cloud },
+  { name: "Ingénieurie Logicielle", icon: Wrench },
+  { name: 'Visualisation', icon: BarChart3 },
+  { name: 'Algorithmes', icon: Binary },
+  { name: "Traitement d'images", icon: Image },
 ]
 
 export default function About() {
@@ -35,10 +38,10 @@ export default function About() {
           >
             <p className="text-lg text-foreground/70 leading-relaxed">
               <span className="text-6xl text-foreground float-left mr-4 leading-none">D</span>
-              éveloppeur concentré et enthousiaste, avec un intérêt marqué pour le développement 
-              de logiciels et l'intelligence artificielle. Grâce à une exposition complète aux 
-              concepts sous-jacents et à leur application à divers projets, mon amour pour ces 
-              domaines est né.
+              éveloppeur concentré et enthousiaste, avec un intérêt marqué pour le développement
+              de logiciels et l'intelligence artificielle. Grâce à une exposition complète aux
+              concepts sous-jacents et à leur application à divers projets, mon amour pour ces
+              domaines s'est concrétisé.
             </p>
             <p className="text-lg text-foreground/70 leading-relaxed">
               Je suis une personne passionnée qui aime construire et appliquer des algorithmes 
@@ -49,15 +52,23 @@ export default function About() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-6">
               <div className="flex items-center gap-3 text-foreground/70">
                 <Phone className="w-5 h-5" />
-                <span>+237 699 568 073</span>
+                <span>Téléphone / Sms: +237 699 568 073</span>
+              </div>
+              <div className="flex items-center gap-3 text-foreground/70">
+                <Phone className="w-5 h-5" />
+                <span>Whatsapp: +237 699 568 073</span>
               </div>
               <div className="flex items-center gap-3 text-foreground/70">
                 <MapPin className="w-5 h-5" />
-                <span>Yaoundé, Cameroun</span>
+                <span>Ville: Yaoundé</span>
+              </div>
+              <div className="flex items-center gap-3 text-foreground/70">
+                <MapPin className="w-5 h-5" />
+                <span>Pays: Cameroun</span>
               </div>
               <div className="flex items-center gap-3 text-foreground/70 sm:col-span-2">
                 <Mail className="w-5 h-5" />
-                <span>lucchuala@gmail.com</span>
+                <span>Email: lucchuala@gmail.com</span>
               </div>
             </div>
           </motion.div>

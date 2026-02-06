@@ -6,32 +6,41 @@ import { GraduationCap, Award } from 'lucide-react'
 const education = [
   {
     id: 1,
-    degree: 'Licence en Informatique',
-    school: 'Institut Africain d\'Informatique',
-    location: 'Yaoundé, Cameroun',
-    period: '2018 - 2021',
-    description: 'Formation en développement logiciel, bases de données et réseaux.',
+    degree: 'Ingénieur en Genie Logicielle',
+    school: 'IAI Cameroun',
+    period: 'Octobre 2021 - Septembre 2022',
+    details: [
+      'Administrations de Base de données',
+      'Développement Web',
+      'Fonctionnements des Algorithmes',
+    ],
+  },
+  {
+    id: 2,
+    degree: 'Technitiens Informatique',
+    school: 'IAI Cameroun',
+    period: 'Octobre 2020 - Août 2021',
+    details: [
+      "Système d'administration de base de données",
+      'Fonctionnement du Web',
+    ],
   },
 ]
 
 const certifications = [
   {
     id: 1,
-    title: 'Laravel Advanced',
-    issuer: 'Laracasts',
+    title: 'Passez au Full Stack avec Node.js, Express et MongoDB',
+    issuer: 'OpenClassrooms',
     date: '2023',
+    link: 'https://openclassrooms.com/fr/course-certificates/6948932507',
   },
   {
     id: 2,
-    title: 'AWS Cloud Practitioner',
-    issuer: 'Amazon',
+    title: 'Adoptez les API REST pour vos projets web',
+    issuer: 'OpenClassrooms',
     date: '2023',
-  },
-  {
-    id: 3,
-    title: 'React Developer',
-    issuer: 'Meta',
-    date: '2022',
+    link: 'https://openclassrooms.com/fr/course-certificates/3612077354',
   },
 ]
 
@@ -55,25 +64,27 @@ export default function Education() {
               <GraduationCap className="w-6 h-6" />
               Formation
             </h3>
-            {education.map((edu, index) => (
-              <motion.div
-                key={edu.id}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="bg-background border border-foreground/10 rounded-md p-6 shadow-soft hover:shadow-soft-lg transition-shadow"
-              >
-                <h4 className="text-xl font-bold text-foreground mb-2">{edu.degree}</h4>
-                <p className="text-foreground/70 font-semibold mb-2">{edu.school}</p>
-                <div className="flex flex-wrap items-center gap-4 text-sm text-foreground/60 mb-3">
-                  <span>{edu.location}</span>
-                  <span>•</span>
-                  <span>{edu.period}</span>
-                </div>
-                <p className="text-foreground/70">{edu.description}</p>
-              </motion.div>
-            ))}
+            <div className="grid gap-6 md:grid-cols-2">
+              {education.map((edu, index) => (
+                <motion.div
+                  key={edu.id}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                  className="bg-background border border-foreground/10 rounded-md p-6 shadow-soft hover:shadow-soft-lg transition-shadow"
+                >
+                  <h4 className="text-xl font-bold text-foreground mb-2">{edu.degree}</h4>
+                  <p className="text-foreground/70 font-semibold mb-2">{edu.school}</p>
+                  <div className="text-sm text-foreground/60 mb-3">{edu.period}</div>
+                  <ul className="text-foreground/70 list-disc pl-5 space-y-2">
+                    {edu.details.map((detail) => (
+                      <li key={detail}>{detail}</li>
+                    ))}
+                  </ul>
+                </motion.div>
+              ))}
+            </div>
           </div>
 
           {/* Certifications */}
@@ -98,7 +109,15 @@ export default function Education() {
                 </div>
                 <h4 className="font-bold text-foreground mb-2">{cert.title}</h4>
                 <p className="text-sm text-foreground/70 mb-1">{cert.issuer}</p>
-                <p className="text-xs text-foreground/60">{cert.date}</p>
+                <p className="text-xs text-foreground/60 mb-3">{cert.date}</p>
+                <a
+                  href={cert.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs underline text-foreground/70 hover:text-foreground"
+                >
+                  Voir le certificat
+                </a>
               </motion.div>
             ))}
           </div>

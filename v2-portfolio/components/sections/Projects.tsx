@@ -2,34 +2,59 @@
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { ExternalLink, Github } from 'lucide-react'
+import { ExternalLink } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Card, CardHeader, CardTitle, CardContent, CardFooter } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Separator } from '@/components/ui/separator'
 
-const categories = ['Tous', 'Enterprise', 'Personnel']
+const categories = ['Tous', 'Entreprise', 'Personnels']
 
 const projects = [
   {
     id: 1,
-    title: 'Système de Gestion',
-    category: 'Enterprise',
-    description: 'Application web complète pour la gestion des ressources d\'entreprise',
-    image: '/assets/projects/project1.jpg',
-    technologies: ['Laravel', 'Vue.js', 'MySQL'],
-    github: 'https://github.com/nguemoue',
-    demo: 'https://demo.com',
+    title: 'IsiQuest',
+    category: 'Entreprise',
+    description: "Application web développée pour Multicreatif.",
+    image: '/assets/img/project/isiquest.png',
+    technologies: ['Laravel', 'JavaScript'],
+    demo: 'https://multicreatif.fr',
   },
   {
     id: 2,
-    title: 'Portfolio Dynamique',
-    category: 'Personnel',
-    description: 'Portfolio personnel avec système d\'administration',
-    image: '/assets/projects/project2.jpg',
-    technologies: ['Next.js', 'TailwindCSS', 'PHP'],
-    github: 'https://github.com/nguemoue',
-    demo: 'https://luc-dev.site',
+    title: 'Pierre Motor Spare',
+    category: 'Entreprise',
+    description: "Site e-commerce développé en Laravel pour la vente de pièces automobiles.",
+    image: '/assets/img/project/pms.png',
+    technologies: ['Laravel', 'PHP'],
+    demo: 'https://pierremotorspares.com/home',
+  },
+  {
+    id: 3,
+    title: 'Ederlang',
+    category: 'Personnels',
+    description: 'Plateforme web développée en Laravel et JavaScript.',
+    image: '/assets/img/project/ederlang.png',
+    technologies: ['Laravel', 'JavaScript'],
+    demo: 'https://ederlang.com',
+  },
+  {
+    id: 4,
+    title: 'Katana world',
+    category: 'Personnels',
+    description: 'Application de gestion développée avec PHP et JavaScript.',
+    image: '/assets/img/project/katana.png',
+    technologies: ['PHP', 'JavaScript'],
+    demo: 'https://katanaworld.org/fr',
+  },
+  {
+    id: 5,
+    title: 'Simmagro',
+    category: 'Personnels',
+    description: 'Projet de simulation agricole.',
+    image: '/assets/img/project/simmagro.png',
+    technologies: ['PHP', 'JavaScript'],
+    demo: 'https://simmagro.com',
   },
   // Ajoutez plus de projets ici
 ]
@@ -86,7 +111,11 @@ export default function Projects() {
               <Card className="overflow-hidden hover:shadow-soft-lg transition-all h-full flex flex-col bg-card border-foreground/10">
                 {/* Image */}
                 <div className="relative h-48 bg-foreground/5 overflow-hidden flex items-center justify-center">
-                  <div className="text-3xl text-foreground/40">PROJECT</div>
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="h-full w-full object-cover"
+                  />
                 </div>
 
                 {/* Content */}
@@ -117,15 +146,9 @@ export default function Projects() {
                 {/* Links */}
                 <CardFooter className="gap-3 pt-4">
                   <Button size="sm" variant="outline" className="flex-1" asChild>
-                    <a href={project.github} target="_blank" rel="noopener noreferrer">
-                      <Github className="w-4 h-4 mr-2" />
-                      Code
-                    </a>
-                  </Button>
-                  <Button size="sm" className="flex-1" asChild>
                     <a href={project.demo} target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="w-4 h-4 mr-2" />
-                      Démo
+                      Détails
                     </a>
                   </Button>
                 </CardFooter>

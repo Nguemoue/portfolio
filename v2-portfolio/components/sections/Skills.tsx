@@ -6,37 +6,32 @@ import { Badge } from '@/components/ui/badge'
 
 const skillCategories = [
   {
-    name: 'Langages',
+    name: 'Langages et Bases de données',
     skills: [
-      { name: 'PHP', level: 90 },
+      { name: 'HTML5', level: 90 },
+      { name: 'CSS3', level: 88 },
       { name: 'JavaScript', level: 85 },
-      { name: 'TypeScript', level: 80 },
-      { name: 'Python', level: 75 },
+      { name: 'MySQL', level: 85 },
+      { name: 'PostgreSQL', level: 80 },
     ],
   },
   {
     name: 'Frameworks',
     skills: [
       { name: 'Laravel', level: 95 },
-      { name: 'Next.js', level: 85 },
+      { name: 'Bootstrap', level: 85 },
       { name: 'Vue.js', level: 80 },
-      { name: 'React', level: 85 },
-    ],
-  },
-  {
-    name: 'Base de données',
-    skills: [
-      { name: 'MySQL', level: 90 },
-      { name: 'PostgreSQL', level: 85 },
-      { name: 'MongoDB', level: 70 },
+      { name: 'Scikit-learn', level: 70 },
     ],
   },
   {
     name: 'Outils & DevOps',
     skills: [
       { name: 'Git', level: 90 },
-      { name: 'Docker', level: 80 },
-      { name: 'Linux', level: 85 },
+      { name: 'AWS', level: 75 },
+      { name: 'Google Cloud', level: 70 },
+      { name: 'Heroku', level: 70 },
+      { name: 'Plesk', level: 65 },
     ],
   },
 ]

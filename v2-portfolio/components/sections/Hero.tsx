@@ -5,10 +5,10 @@ import { ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const highlights = [
-  "Laravel & Next.js",
-  "Interfaces épurées",
-  "Performance & qualité",
-  "Expériences produit",
+  "Laravel",
+  "JavaScript",
+  "Intelligence Artificielle",
+  "Développement Full Stack",
 ]
 
 export default function Hero() {
@@ -32,9 +32,9 @@ export default function Hero() {
               </span>
             </h1>
             <p className="mt-6 text-lg text-foreground/70 max-w-xl">
-              Développeur Full Stack orienté produit. Je conçois des expériences
-              web soignées, rapides et simples à maintenir — avec une exécution
-              claire, lisible et professionnelle.
+              Développeur web passionné spécialisé en Laravel, JavaScript et Intelligence
+              Artificielle. Je conçois des solutions web fiables, lisibles et prêtes
+              pour la production.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Button size="lg" asChild>

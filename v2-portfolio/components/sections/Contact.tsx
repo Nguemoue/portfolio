@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Send, Mail, Phone, MapPin } from 'lucide-react'
+import { Send, Mail, Phone, MapPin, Share2 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
 export default function Contact() {
@@ -41,7 +41,7 @@ export default function Contact() {
           </p>
         </motion.div>
 
-        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
+        <div className="max-w-5xl mx-auto grid lg:grid-cols-[2fr_3fr] gap-12">
           {/* Contact Info */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -52,43 +52,78 @@ export default function Contact() {
             <h3 className="text-2xl font-bold mb-6">Informations de contact</h3>
 
             <div className="space-y-4">
-              <div className="flex items-start gap-4 p-4 bg-background border border-foreground/10 rounded-md shadow-soft hover:shadow-soft-lg transition-shadow">
+              <div className="flex items-start gap-4 p-4 bg-background border border-foreground/10 rounded-md">
+                <div className="w-12 h-12 border border-foreground/20 rounded-sm flex items-center justify-center flex-shrink-0">
+                  <MapPin className="w-6 h-6" />
+                </div>
+                <div>
+                  <h4 className="font-semibold text-foreground mb-1">Adresse</h4>
+                  <p className="text-foreground/70">Nkolbisson, Yaoundé</p>
+                  <p className="text-foreground/70">Centre</p>
+                  <p className="text-foreground/70">Cameroun</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4 p-4 bg-background border border-foreground/10 rounded-md">
+                <div className="w-12 h-12 border border-foreground/20 rounded-sm flex items-center justify-center flex-shrink-0">
+                  <Share2 className="w-6 h-6" />
+                </div>
+                <div>
+                  <h4 className="font-semibold text-foreground mb-1">Social Profiles</h4>
+                  <div className="flex flex-wrap gap-3 text-sm text-foreground/70">
+                    <a
+                      href="https://www.linkedin.com/in/nguemoue"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline hover:text-foreground"
+                    >
+                      LinkedIn
+                    </a>
+                    <a
+                      href="https://www.github.com/Nguemoue"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline hover:text-foreground"
+                    >
+                      GitHub
+                    </a>
+                    <a
+                      href="mailto:lucchuala@gmail.com"
+                      className="underline hover:text-foreground"
+                    >
+                      Email
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4 p-4 bg-background border border-foreground/10 rounded-md">
                 <div className="w-12 h-12 border border-foreground/20 rounded-sm flex items-center justify-center flex-shrink-0">
                   <Mail className="w-6 h-6" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">Email</h4>
-                  <a
-                    href="mailto:lucchuala@gmail.com"
-                    className="text-foreground/70 hover:text-foreground transition-colors"
-                  >
-                    lucchuala@gmail.com
-                  </a>
+                  <p className="text-foreground/70">lucchuala@gmail.com</p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 p-4 bg-background border border-foreground/10 rounded-md shadow-soft hover:shadow-soft-lg transition-shadow">
+              <div className="flex items-start gap-4 p-4 bg-background border border-foreground/10 rounded-md">
                 <div className="w-12 h-12 border border-foreground/20 rounded-sm flex items-center justify-center flex-shrink-0">
                   <Phone className="w-6 h-6" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">Téléphone</h4>
-                  <a
-                    href="tel:+237699568073"
-                    className="text-foreground/70 hover:text-foreground transition-colors"
-                  >
-                    +237 699 568 073
-                  </a>
+                  <p className="text-foreground/70">+237 699 56 8073</p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 p-4 bg-background border border-foreground/10 rounded-md shadow-soft hover:shadow-soft-lg transition-shadow">
+              <div className="flex items-start gap-4 p-4 bg-background border border-foreground/10 rounded-md">
                 <div className="w-12 h-12 border border-foreground/20 rounded-sm flex items-center justify-center flex-shrink-0">
-                  <MapPin className="w-6 h-6" />
+                  <Phone className="w-6 h-6" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-foreground mb-1">Localisation</h4>
-                  <p className="text-foreground/70">Yaoundé, Cameroun</p>
+                  <h4 className="font-semibold text-foreground mb-1">Whatsapp</h4>
+                  <p className="text-foreground/70">+237 699 56 8073</p>
                 </div>
               </div>
             </div>
@@ -100,7 +135,7 @@ export default function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <form onSubmit={handleSubmit} className="bg-background border border-foreground/10 rounded-md p-8 shadow-soft-lg space-y-6">
+            <form onSubmit={handleSubmit} className="bg-background border border-foreground/10 rounded-md p-8 space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
                   Nom complet

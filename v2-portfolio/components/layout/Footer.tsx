@@ -54,7 +54,7 @@ export default function Footer() {
           {/* Social */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Suivez-moi</h3>
-            <div className="flex gap-4">
+            <div className="flex flex-wrap gap-4">
               {socialLinks.map((link) => (
                 <a
                   key={link.label}
